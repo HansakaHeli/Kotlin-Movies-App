@@ -3,7 +3,7 @@ package com.example.movies.data
 import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "trending_movies")
+@Entity(tableName = "trending_movies") // Create a table named trending_movies in Room database
 data class Movie(
 
     @SerializedName("id")
