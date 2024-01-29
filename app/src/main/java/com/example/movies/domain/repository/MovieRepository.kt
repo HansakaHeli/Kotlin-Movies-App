@@ -1,4 +1,4 @@
-package com.example.movies.domain
+package com.example.movies.domain.repository
 
 import com.example.movies.data.model.Movie
 
