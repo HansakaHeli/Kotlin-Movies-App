@@ -10,6 +10,8 @@ import com.example.movies.databinding.ListItemBinding
 
 class MovieAdapter(): RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
 
+    // Fake comment
+
     private val movieList = ArrayList<Movie>()
 
     fun setList(movies: List<Movie>){
