@@ -11,6 +11,7 @@ import com.example.movies.databinding.ListItemBinding
 class MovieAdapter(): RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
 
     // Fake comment
+    // Another fake comment
 
     private val movieList = ArrayList<Movie>()
 
