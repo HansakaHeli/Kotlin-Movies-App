@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.movies.R
 import com.example.movies.data.model.Movie
 import com.example.movies.databinding.ListItemBinding
@@ -17,7 +18,8 @@ class MovieAdapter(): RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
         movieList.addAll(movies)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    // This function creates and returns a new instance of MyViewHolder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder { // MyViewHolder is the return type
 
         // Get a LayoutInflater instance from the context of the parent view group
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -52,7 +54,12 @@ class MovieAdapter(): RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
             binding.titleTextView.text = movie.title
             binding.descTextView.text = movie.overview
 
-            val posterURL = ""
+            val posterURL = "https://image.tmdb.org/t/p/w500/" + movie.posterPath
+
+            // Using Glide library to load an image from a URL into the specified ImageView
+            Glide.with(binding.imageView.context) // Initialize Glide with the context of the ImageView
+                .load(posterURL) // Specify the URL of the image to be loaded
+                .into(binding.imageView) // Load the image into the ImageView
 
         }
 
