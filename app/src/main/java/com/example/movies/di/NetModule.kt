@@ -10,6 +10,8 @@ import javax.inject.Singleton
 @Module
 class NetModule(private val baseUrl: String) {
 
+    // Fake comment
+
     @Singleton
     @Provides
     fun providesRetrofit(): Retrofit{
