@@ -10,7 +10,7 @@ import javax.inject.Singleton
 @Module
 class NetModule(private val baseUrl: String) {
 
-    // Fake comment
+    // Learn DI
 
     @Singleton
     @Provides
