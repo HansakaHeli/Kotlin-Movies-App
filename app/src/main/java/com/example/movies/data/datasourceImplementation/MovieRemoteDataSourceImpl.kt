@@ -5,7 +5,7 @@ import com.example.movies.data.datasource.MovieRemoteDataSource
 import com.example.movies.data.model.MovieList
 import retrofit2.Response
 
-class MovieRomoteDataSourceImpl(
+class MovieRemoteDataSourceImpl(
     private val tmdbService: TMDBService,
     private val apiKey: String
 ):MovieRemoteDataSource {
