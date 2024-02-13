@@ -3,10 +3,11 @@ package com.example.movies.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.movies.domain.usecases.GetMoviesUseCase
+import com.example.movies.domain.usecases.UpdateMoviesUseCase
 
 class ViewModelFactory(
     private val getMoviesUseCase: GetMoviesUseCase,
-    private val updateMoviesUseCase: GetMoviesUseCase
+    private val updateMoviesUseCase: UpdateMoviesUseCase
 ) :ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
