@@ -1,4 +1,4 @@
-package com.example.movies.di
+package com.example.movies.presentation.di
 
 import com.example.movies.data.MovieRepositoryImpl
 import com.example.movies.data.datasource.MovieCacheDataSource

@@ -1,4 +1,4 @@
-package com.example.movies.di
+package com.example.movies.presentation.di
 
 import dagger.Component
 import javax.inject.Singleton
@@ -9,7 +9,7 @@ import javax.inject.Singleton
     CacheDataModule::class,
     DatabaseModule::class,
     LocalDataModule::class,
-    MovieModule::class,
+    //MovieModule::class,
     NetModule::class,
     RemoteDataModule::class,
     RepositoryModule::class,
@@ -17,5 +17,5 @@ import javax.inject.Singleton
 ])
 interface AppComponent {
 
-    fun movieSubComponent():MovieSubComponent.Factory
+    fun movieSubComponent(): MovieSubComponent.Factory
 }
