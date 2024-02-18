@@ -18,4 +18,4 @@ import javax.inject.Singleton
 interface AppComponent {
 
     fun movieSubComponent(): MovieSubComponent.Factory
-}
+} 
