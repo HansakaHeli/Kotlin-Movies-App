@@ -54,7 +54,6 @@ class MovieAdapter(): RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
             binding.titleTextView.text = movie.title
             binding.descTextView.text = movie.overview
 
-            // URL
             val posterURL = "https://image.tmdb.org/t/p/w500/" + movie.posterPath
 
             // Using Glide library to load an image from a URL into the specified ImageView
