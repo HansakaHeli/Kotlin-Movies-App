@@ -7,7 +7,6 @@ import retrofit2.http.Query
 
 interface TMDBService {
 
-    // comment
     @GET("trending/movie/day")
     suspend fun getTrendingMovies(
         @Query(
